@@ -9,10 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="{% static "css/style.css" %}" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
     </head>
     <body> 
 	<header class="header">
-        <p class="logo"><a class="logo" href="#">Carmine Corbo</a></p>
+        <h1 class="logo"><a class="logo" href="#">Carmine Corbo</a></h1>
         <ul class="main-nav">
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
@@ -21,4 +23,6 @@
 	</header> 
 </body>
         <script src="{% static "script/script.css" %}" async defer></script>
+        {%block content%}
+        {%endblock%}
 </html>
