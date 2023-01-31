@@ -21,7 +21,10 @@ def contact(request):
         else:
             contact.save()
             print("Post request recieved")
-            return render(request, 'thank-you.html')
+            context = {
+                'name': contact.name
+            }
+            return render(request, 'thank-you.html' , context)
     return render(request, 'contact.html')
 
     
