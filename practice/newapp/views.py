@@ -6,10 +6,12 @@ from newapp.models import Post
 
 
 # Create your views here.
-def home(request):
-    template = loader.get_template('posts.html')
+def blog(request):
     posts = Post.objects.all()
     context = {
         'posts':posts
     }
     return render(request, 'posts.html' , context)
+
+def home(request):
+    return render(request, 'base.html')

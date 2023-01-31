@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block content%}
+    <h2 class="posts">Posts</h2>
+    <div class="post-detail">
+    {% for post in posts %}
+    <div class="individual-post">
+    <h4 class="post-title"> {{post.title}}</h4>
+    <p class="post-body">{{post.body}}</p>
+    </div>
+    {% endfor%}
+    </div>
+{%endblock%}
