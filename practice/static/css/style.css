@@ -99,6 +99,11 @@ a{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+.success{
+	color: red; 
+	padding-top: 5px; 
+	margin-top: 5px;
+}
 /* ================================= 
   Media Queries
 ==================================== */
