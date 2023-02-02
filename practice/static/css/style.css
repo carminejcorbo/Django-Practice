@@ -1,9 +1,8 @@
-
 *{
+	font-family: 'Barlow Condensed';
 	box-sizing: border-box;
 }
 body{
-	font-family: 'Barlow Condensed', 'Montserrat';
 	line-height: 1.6;
 	margin: 0;
 	min-height: 100vh;
@@ -32,65 +31,46 @@ a{
 	color:white;
 	margin-right: 5%;
 	margin-left: 5%;
-	/* border-color: white;
-	border-style: solid; */
 	padding: 5px
 }
-
-.individual-post{
-/* 	border-color: white;
-	border-style: solid; */	
-}
-
 .individual-post,h4,p{
-	/* border-color: white;
-	border-style: solid; */
 	padding: 5px;
 	margin: 5px;
 }
 .post-title{
-	/* background-color: red; */
 	padding: 5px;
 	margin: 5px;
 	color:white;
 }
 .post-body{
-	/* background-color: blue; */
 	padding: 5px;
 	margin: 5px;
 	color: white;
 }
-
 .logo {
 	margin: 0;
 	font-size: 1.45em;
 	color:white;
 }
-
 .logo a:hover{
 	color: #9c2c2c;
 }
-
 .main-nav {
 	margin-top: 5px;
 }
-
 .logo a, .main-nav a{
 	padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
 }
-
 .main-nav a{
 	color: white;
 	font-size: .99em;
 }
-
 .main-nav a:hover{
 	color: #9c2c2c;
 }
-
 .header{
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -104,10 +84,6 @@ a{
 	padding-top: 5px; 
 	margin-top: 5px;
 }
-/* ================================= 
-  Media Queries
-==================================== */
-
 @media (min-width: 769px){
 	.header,
 	.main-nav {

@@ -9,7 +9,7 @@
         {% csrf_token %}
 
         <div class="formbold-mb-5">
-          <label for="text" class="formbold-form-label" required> User Name </label>
+          <label for="text" class="formbold-form-label" required> Username </label>
           <input type="username"name="username"id="username"placeholder="Username"class="formbold-form-input"/>
         </div>
   
@@ -28,7 +28,7 @@
           <p style="color: red; margin: 5px;" {% if message.tags %} class="{{message.tags}}"{% endif %}>{{message}}</p>
         {% endfor %}
       {% endif %}
+      <a href="create">Create an account</a>
     </div>
-
   </div>
 {% endblock%}

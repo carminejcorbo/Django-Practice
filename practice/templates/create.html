@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+      <form method="POST" id="form" class="form" >
+        {% csrf_token %}
+        <h1 style="color: white; margin-left: 100px;">Create new user account.</h1>
+        <div class="formbold-mb-5">
+          <label for="fname" class="formbold-form-label" required>First Name</label>
+          <input type="text"name="fname"id="fname"placeholder="Full Name"class="formbold-form-input"/>
+        </div>
+        <div class="formbold-mb-5">
+            <label for="lname" class="formbold-form-label" required>Last Name</label>
+            <input type="text"name="lname"id="lname"placeholder="Full Name"class="formbold-form-input"/>
+        </div>
+        <div class="formbold-mb-5">
+          <label for="username" class="formbold-form-label" required>Username</label>
+          <input type="text"name="username"id="username"placeholder="Username"class="formbold-form-input"/>
+        </div>
+  
+        <div class="formbold-mb-5">
+          <label for="email" class="formbold-form-label" required>Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email." class="formbold-form-input"/>
+        </div>
+
+        <div class="formbold-mb-5">
+            <label for="password" class="formbold-form-label" required>Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password." class="formbold-form-input"/>
+        </div>
+
+        <div class="formbold-mb-5">
+            <label for="retype" class="formbold-form-label" required>Re-type Password</label>
+            <input type="password" name="retype" id="retype" placeholder="Enter your password again." class="formbold-form-input"/>
+        </div>
+        <div>
+          <button type="submit" class="formbold-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{%endblock%}
