@@ -1,7 +1,8 @@
+
 from django.shortcuts import render
 from .models import Contact
 
-# Create your views here.
+
 def contact(request):
     if request.method == 'POST':
         contact = Contact()
@@ -14,7 +15,8 @@ def contact(request):
         contact.subject = subject
         contact.message = message
         print(type(contact.name))
-        
+        print(contact.name)
+
         if name == "" or email == "" or subject =="" or message == "":
             print("Please enter more data")
             return render(request, 'contact.html')
@@ -22,9 +24,10 @@ def contact(request):
             contact.save()
             print("Post request recieved")
             context = {
-                'name': contact.name
+                    'name': contact.name
             }
             return render(request, 'thank-you.html' , context)
     return render(request, 'contact.html')
 
-    
+
+
